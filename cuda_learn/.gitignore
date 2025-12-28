@@ -1,0 +1,28 @@
+# Ignore everything by default
+*
+*/
+
+# But include directories (needed for git to traverse)
+!*/
+
+# Include CUDA source files
+!*.cu
+!*.cuh
+
+# Include Jupyter notebooks
+!*.ipynb
+
+# Include .gitignore itself
+!.gitignore
+
+# Exclude common build artifacts even if they match above
+*.o
+*.so
+*.a
+*.out
+
+# Exclude profile data
+*.qdstrm
+*.ncu-rep
+*.qdrep
+*.sqlite
